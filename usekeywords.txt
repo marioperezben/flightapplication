@@ -1,0 +1,24 @@
+*** Settings ***
+Library           SeleniumLibrary
+Library           ExcelLibrary
+
+*** Variables ***
+${username}       ${EMPTY}
+${password}       ${EMPTY}
+
+*** Keywords ***
+login_to_flight
+    [Arguments]    ${username}    ${password}
+    input text    xpath://input[@type='email']    ${username}
+    input text    xpath://input[@type='password']    ${password}
+    Click Element    xpath://div[@class='btn' ]
+
+login_to_flight_excel
+    Set Global Variable    ${username}
+    Set Global Variable    ${password}
+    open excel    D:/TRABAJO/Auben/Automatizacion/robot/Demo/LoginData.xls
+    ${username}    Read Cell Data By Coordinates    Login    1    2
+    ${password}    Read Cell Data By Coordinates    Login    2    2
+    input text    xpath://input[@type='email']    ${username}
+    input text    xpath://input[@type='password']    ${password}
+    Click Element    xpath://div[@class='btn' ]

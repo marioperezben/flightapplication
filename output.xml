@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190927 18:06:24.646" generator="Robot 3.1.2 (Python 2.7.14 on win32)">
+<suite source="D:\TRABAJO\Auben\Automatizacion\robot\Demo\TestSuite01.robot" id="s1" name="TestSuite01">
+<test id="s1-t1" name="TC01">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${p}</arg>
+</arguments>
+<status status="PASS" endtime="20190927 18:06:24.675" starttime="20190927 18:06:24.675"></status>
+</kw>
+<status status="PASS" endtime="20190927 18:06:24.676" critical="yes" starttime="20190927 18:06:24.674"></status>
+</test>
+<status status="PASS" endtime="20190927 18:06:24.678" starttime="20190927 18:06:24.649"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="TestSuite01" pass="1">TestSuite01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

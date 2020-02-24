@@ -1,0 +1,10 @@
+*** Settings ***
+Library           SeleniumLibrary
+
+*** Variables ***
+${icmp1}          5
+${icmp2}          5
+
+*** Keywords ***
+Comparetwovariables
+    Should Be Equal As Integers    ${icmp1}    ${icmp2}
